@@ -1,41 +1,50 @@
 <html>
     <body>
-        <h1>Internet</h1>
+        <h1>Formulario de Registro</h1>
 
-        <h2>Contenido</h2>
-            <ol>
-                <li>Principales Protocolos</li>
-                <li>Formas de Conectarse</li>
-            </ol>
-        
-        <h2>1. Principales Protocolos</h2>
+        <form action="mi-formulario" method="post">
             <ul>
-                <li>Transmisión de ficheros</li>
-                    <ul>
-                        <li>FTP</li>
-                    </ul>
-                <li>Correo Electrónico</li>
-                    <ul>
-                        <li>IMAP</li>
-                        <li>POP</li>
-                        <li>SMTP</li>
-                    </ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre-del-usuario">
+                </li>
             </ul>
-    
-        <h2>2. Formas de Conectarse</h2>        
-            <dl>
-                <dt>Red Telefónica Conmutada (RTC)</dt>
-                <dd>La linea telefonica de toda la vida. Para acceder a Internet es necesario un módem.</dd>
 
-                <dt>Red Digital de Servicio Integrados (RDSI)</dt>
-                <dd>Una linea telefónica especial. Para acceder a Internet es necesario un módem RDSI.</dd>
+            <ul>
+                <li>
+                    <label for="name"> Apellidos:</label>
+                    <input type="text" id="apellido" name="apellidos-del-usuario">
+                </li>
+            </ul>
 
-                <dt>Linea de Abonado Especial Asimétrica (ADSL)</dt>
-                <dd>Se basa en la conversión de una linea RTC en una linea de alta velocidad. Para acceder a Internet es necesario un módem ADSL</dd>
+            <ul>
+                <li>
+                    <label for="name">Sexo:</label>
+                    <input type="radio" name="sexo" id="sexo-masculino"> Hombre
+                    <input type="radio" name="sexo" id="sexo-femenino"> Mujer
+                </li>
+            </ul>
 
-                <dt>Fibra Óptica</dt>
-                <dd>Una linea de fibra óptica. Normalmente la fibra óptica no llega hasta el usuario final, por lo que el término más apropiado es Fibra hibrida coaxial.</dd>
-                
-            </dl>
+            <ul>
+                <li>
+                    <label for="mail">Correo Electrónico:</label>
+                    <input type="email" name="mail" id="correo-del-usuario">
+                </li>
+            </ul>
+
+            <p>
+                    <input type="checkbox" checked> 
+                    <label for="">Deseo recibir información sobre novedades y ofertas</label>
+            </p>
+
+            <p>
+                    <input type="checkbox"> 
+                    <label for="">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+            </p>
+
+            <p>
+                <button name="boton">Enviar</button>
+            </p>
+        </form>
     </body>
 </html>
