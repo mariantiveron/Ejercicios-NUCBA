@@ -1,50 +1,56 @@
 <html>
+
     <body>
+    
         <h1>Formulario de Registro</h1>
 
-        <form action="mi-formulario" method="post">
-            <ul>
-                <li>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre-del-usuario">
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <label for="name"> Apellidos:</label>
-                    <input type="text" id="apellido" name="apellidos-del-usuario">
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <label for="name">Sexo:</label>
-                    <input type="radio" name="sexo" id="sexo-masculino"> Hombre
-                    <input type="radio" name="sexo" id="sexo-femenino"> Mujer
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <label for="mail">Correo Electrónico:</label>
-                    <input type="email" name="mail" id="correo-del-usuario">
-                </li>
-            </ul>
-
+        <form action="mi-formulario" method="post"></form>
             <p>
-                    <input type="checkbox" checked> 
-                    <label for="">Deseo recibir información sobre novedades y ofertas</label>
+                <label for="name">Nombre:</label>
+                <input type="text" id="nombre" name="nombre-usuario">
             </p>
 
             <p>
-                    <input type="checkbox"> 
-                    <label for="">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+                <label for="name">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellido-usuario">
+            </p>    
+
+            <p>
+                <label for="name">Sexo:</label>
+                <input type="radio" id="sexo" name="hombre">Hombre
+                <input type="radio" id="sexo" name="mujer" checked>Mujer
+            </p>
+
+            <p>
+                <label for="mail">Correo:</label>
+                <input type="email" name="mail" id="correo-usuario">
+            </p>
+
+            <p>
+                <label for="name">Población:</label>
+                <select name="poblacion" id="poblacion">
+                    <option>Alicante</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="name">Descripción:</label>
+                <textarea name="textarea" id="textarea" cols="70" rows="8"></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox">
+                <label for="name">Deseo recibir información sobre novedades y ofertas</label>
+            </p>
+
+            <p>
+                <input type="checkbox">
+                <label for="name">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre la protección de datos</label>
             </p>
 
             <p>
                 <button name="boton">Enviar</button>
             </p>
-        </form>
     </body>
+
 </html>
